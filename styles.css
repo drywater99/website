@@ -1,12 +1,10 @@
 body {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-rows: 40px 160px 40px 120px 120px 40px;
-  grid-template-columns: auto auto auto;
+    display: grid;
+    grid-template-rows: 70px auto auto auto auto;
 }
 
 section {
-  background: salmon;
+    background: salmon;
 }
 
 .header,
@@ -14,11 +12,22 @@ section {
 .stage,
 .contact,
 .about {
-  background: hotpink;
-  grid-column: span 3;
+    background: hotpink;
+    grid-column: span 3;
 }
 
 .header,
 .footer {
-  background: greenyellow;
+    background: ghostwhite;
+    grid-gap: 20px;
+}
+
+.stage {
+    display: inline-block;
+    padding: 40px 80px;
+}
+
+.contact {
+    background: white !important;
+    padding: 30px 80px;
 }
